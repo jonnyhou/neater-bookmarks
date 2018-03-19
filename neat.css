@@ -19,6 +19,27 @@ body.linux{
 body.transitional{
 	-webkit-transition-property: height;
 }
+body[data-zoom='60']>*:not(menu),
+body[data-zoom='60'] menu[type=context] command{
+	zoom: .6;
+}
+body[data-zoom='60'] #drop-overlay.bookmark{ /* zooming out makes the line too hard to see */
+	border-top: 0;
+}
+body[data-zoom='70']>*:not(menu),
+body[data-zoom='70'] menu[type=context] command{
+	zoom: .7;
+}
+body[data-zoom='70'] #drop-overlay.bookmark{ /* zooming out makes the line too hard to see */
+	border-top: 0;
+}
+body[data-zoom='80']>*:not(menu),
+body[data-zoom='80'] menu[type=context] command{
+	zoom: .8;
+}
+body[data-zoom='80'] #drop-overlay.bookmark{ /* zooming out makes the line too hard to see */
+	border-top: 0;
+}
 body[data-zoom='90']>*:not(menu),
 body[data-zoom='90'] menu[type=context] command{
 	zoom: .9;
